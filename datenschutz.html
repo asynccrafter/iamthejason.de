@@ -4,98 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutzerklärung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html">I'm Jason :)</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="kontakt.html">Kontakt & Social Media</a></li>
-                <li><a href="meine-programme.html">Meine Projekte</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h1>Datenschutzerklärung</h1>
-        </section>
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo"><span>//</span> I'm Jason</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#aboutme">About Me</a></li>
+    <li><a href="index.html#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
 
-        <section>
-            <h2>1. Verantwortlicher und Kontaktinformationen</h2>
-            <p>
-                <strong>Verantwortlicher für Datenverarbeitung:</strong><br><br>
-                Jason Andre Fischer<br>
-                Rudolf-Breitscheidstraße 11<br>
-                38820 Halberstadt<br>
-                Deutschland<br><br>
-                <strong>E-Mail:</strong> <a href="mailto:kontakt@iamthejason.de">kontakt@iamthejason.de</a>
-            </p>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#aboutme">About Me</a></li>
+    <li><a href="index.html#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+</div>
 
-            <h2>2. Grundlagen der Datenverarbeitung</h2>
-            <p>
-                Nach Maßgabe des Art. 6 DSGVO ist die Rechtsgrundlage für die Verarbeitung personenbezogener Daten die Erfüllung eines Vertrags, zu dessen Parteien die betroffene Person gehört, oder die Durchführung vorvertraglicher Maßnahmen, die auf Anfrage der betroffenen Person erfolgen. Die Rechtsgrundlage für die Verarbeitung von Daten zu Zwecken der Verfolgung meiner berechtigten Interessen ist Art. 6 Abs. 1 lit. f DSGVO.
-            </p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">transparency // 2026</div>
+    <h1 class="hero-title">
+      Datenschutz<br>
+      <span class="accent">Erklärung</span>
+    </h1>
+    <p class="hero-subtitle">
+      Deine Privatsphäre ist mir wichtig. Erfahre hier, wie ich mit deinen Daten umgehe.
+    </p>
+  </div>
+</section>
 
-            <h2>3. Zugriffsdaten und Server-Logfiles</h2>
-            <p>
-                Du kannst meine Website besuchen, ohne Angaben zu deiner Person zu machen. Bei jedem Aufruf meiner Website speichert der Webserver automatisch ein sogenanntes Server-Logfile, das folgende Daten enthält:
-            </p>
-            <ul>
-                <li>Name der angeforderten Datei</li>
-                <li>Deine IP-Adresse</li>
-                <li>Datum und Uhrzeit des Abrufs</li>
-                <li>Übertragene Datenmengen</li>
-                <li>Name und Version deines Browsers</li>
-                <li>Betriebssystem des zugreifenden Computers</li>
-                <li>HTTP-Status-Code</li>
-                <li>Referring URL</li>
-            </ul>
-            <p>
-                Diese Zugriffsdaten werden ausschließlich zum Zwecke der Sicherstellung eines störungsfreien Betriebs der Website sowie der Verbesserung meines Angebots ausgewertet. Alle Zugriffsdaten werden spätestens sieben Tage nach Ende deines Seitenbesuchs automatisch gelöscht.
-            </p>
+<!-- CONTENT -->
+<section>
+  <div class="container reveal">
+    <div class="section-label">rechtliche informationen</div>
+    <h2>Datenschutz nach <span class="green">DSGVO</span></h2>
 
-            <h2>4. Web-Hosting</h2>
-            <p>
-                <strong>Hosting-Anbieter: netcup GmbH</strong><br>
-                Daimlerstr. 25, 76185 Karlsruhe, Deutschland<br><br>
-                Meine Website wird von netcup gehostet. Netcup ist ein deutscher Hosting-Anbieter, der sich an die strengen Datenschutzgesetze der EU hält. Alle Daten, die im Rahmen des Hostings verarbeitet werden, unterliegen den Bestimmungen der DSGVO.
-            </p>
-            <p>
-                Weitere Informationen zum Datenschutz bei netcup findest du unter: <a href="https://www.netcup.de/datenschutz" target="_blank" rel="noopener">https://www.netcup.de/datenschutz</a>
-            </p>
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">1. Verantwortlicher und Kontaktinformationen</h2>
+      <p>
+        <strong>Verantwortlicher für Datenverarbeitung:</strong><br><br>
+        Jason Andre Fischer<br>
+        Rudolf-Breitscheidstraße 11<br>
+        38820 Halberstadt<br>
+        Deutschland<br><br>
+        <strong>E-Mail:</strong> <a href="mailto:kontakt@iamthejason.de" style="color: var(--green);">kontakt@iamthejason.de</a>
+      </p>
+    </div>
 
-            <h2>5. Cookies</h2>
-            <p>
-                Meine Website verwendet keine Cookies, die einer ausdrücklichen Einwilligung bedürfen. Es können ausschließlich technisch notwendige Cookies (sog. Session-Cookies) zum Einsatz kommen, die für die grundlegende Funktionalität der Website erforderlich sind. Diese werden nach Ende deines Besuchs bzw. nach dem Schließen des Browsers automatisch gelöscht.
-            </p>
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">2. Grundlagen der Datenverarbeitung</h2>
+      <p>
+        Nach Maßgabe des Art. 6 DSGVO ist die Rechtsgrundlage für die Verarbeitung personenbezogener Daten die Erfüllung eines Vertrags, zu dessen Parteien die betroffene Person gehört, oder die Durchführung vorvertraglicher Maßnahmen, die auf Anfrage der betroffenen Person erfolgen. Die Rechtsgrundlage für die Verarbeitung von Daten zu Zwecken der Verfolgung meiner berechtigten Interessen ist Art. 6 Abs. 1 lit. f DSGVO.
+      </p>
+    </div>
 
-            <h2>6. Externe Links und Social Media</h2>
-            <p>
-                Auf meiner Website findest du Links zu meinen Profilen auf sozialen Netzwerken und anderen Diensten. Diese Links sind einfache Verlinkungen und keine sogenannten Social-Plugins. Solange du diese Links nicht aktivierst, werden keine Daten an die jeweiligen Plattformen übertragen.
-            </p>
-            <p>
-                Wenn du auf einen dieser Links klickst, verlässt du meine Website und wirst zur jeweiligen Plattform weitergeleitet. Ab diesem Moment habe ich keinen Einfluss mehr auf die Datenverarbeitung.
-            </p>
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">3. Zugriffsdaten und Server-Logfiles</h2>
+      <p>
+        Du kannst meine Website besuchen, ohne Angaben zu deiner Person zu machen. Bei jedem Aufruf meiner Website speichert der Webserver automatisch ein sogenanntes Server-Logfile, das folgende Daten enthält:
+      </p>
+      <ul style="margin: 1.5rem 0; margin-left: 2rem;">
+        <li>Name der angeforderten Datei</li>
+        <li>Deine IP-Adresse</li>
+        <li>Datum und Uhrzeit des Abrufs</li>
+        <li>Übertragene Datenmengen</li>
+        <li>Name und Version deines Browsers</li>
+        <li>Betriebssystem des zugreifenden Computers</li>
+        <li>HTTP-Status-Code</li>
+        <li>Referring URL</li>
+      </ul>
+      <p>
+        Diese Zugriffsdaten werden ausschließlich zum Zwecke der Sicherstellung eines störungsfreien Betriebs der Website sowie der Verbesserung meines Angebots ausgewertet. Alle Zugriffsdaten werden spätestens sieben Tage nach Ende deines Seitenbesuchs automatisch gelöscht.
+      </p>
+    </div>
 
-            <h2>7. Betroffenenrechte (DSGVO)</h2>
-            <p>
-                Du hast folgende Rechte bezüglich deiner personenbezogenen Daten:
-            </p>
-            <ul>
-                <li><strong>Recht auf Auskunft (Art. 15 DSGVO):</strong> Du kannst Auskunft darüber verlangen, welche deiner personenbezogenen Daten ich speichere.</li>
-                <li><strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Du kannst die Berichtigung fehlerhafter Daten verlangen.</li>
-                <li><strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Du kannst die Löschung deiner Daten verlangen, soweit nicht gesetzliche Aufbewahrungspflichten entgegenstehen.</li>
-            </ul>
-        </section>
-    </main>
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">4. Web-Hosting</h2>
+      <p>
+        <strong>Hosting-Anbieter: netcup GmbH</strong><br>
+        Daimlerstr. 25, 76185 Karlsruhe, Deutschland<br><br>
+        Meine Website wird von netcup gehostet. Netcup ist ein deutscher Hosting-Anbieter, der sich an die strengen Datenschutzgesetze der EU hält. Alle Daten, die im Rahmen des Hostings verarbeitet werden, unterliegen den Bestimmungen der DSGVO.
+      </p>
+      <p style="margin-top: 1.5rem;">
+        Weitere Informationen zum Datenschutz bei netcup findest du unter: <a href="https://www.netcup.de/datenschutz" target="_blank" rel="noopener" style="color: var(--green);">https://www.netcup.de/datenschutz</a>
+      </p>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Jason Fischer | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutzerklärung</a></p>
-    </footer>
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">5. Cookies</h2>
+      <p>
+        Meine Website verwendet keine Cookies, die einer ausdrücklichen Einwilligung bedürfen. Es können ausschließlich technisch notwendige Cookies (sog. Session-Cookies) zum Einsatz kommen, die für die grundlegende Funktionalität der Website erforderlich sind. Diese werden nach Ende deines Besuchs bzw. nach dem Schließen des Browsers automatisch gelöscht.
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">6. Externe Links und Social Media</h2>
+      <p>
+        Auf meiner Website findest du Links zu meinen Profilen auf sozialen Netzwerken und anderen Diensten. Diese Links sind einfache Verlinkungen und keine sogenannten Social-Plugins. Solange du diese Links nicht aktivierst, werden keine Daten an die jeweiligen Plattformen übertragen.
+      </p>
+      <p style="margin-top: 1.5rem;">
+        Wenn du auf einen dieser Links klickst, verlässt du meine Website und wirst zur jeweiligen Plattform weitergeleitet. Ab diesem Moment habe ich keinen Einfluss mehr auf die Datenverarbeitung.
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">7. Betroffenenrechte (DSGVO)</h2>
+      <p>
+        Du hast folgende Rechte bezüglich deiner personenbezogenen Daten:
+      </p>
+      <ul style="margin: 1.5rem 0; margin-left: 2rem;">
+        <li><strong>Recht auf Auskunft (Art. 15 DSGVO):</strong> Du kannst Auskunft darüber verlangen, welche deiner personenbezogenen Daten ich speichere.</li>
+        <li><strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Du kannst die Berichtigung fehlerhafter Daten verlangen.</li>
+        <li><strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Du kannst die Löschung deiner Daten verlangen, soweit nicht gesetzliche Aufbewahrungspflichten entgegenstehen.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>&copy; 2026 Jason Fischer | I'm Jason</div>
+  <div style="color: #555; font-size:0.7rem">
+    <a href="impressum.html" style="color:#666; text-decoration:underline">Impressum</a> | <a href="datenschutz.html" style="color:#666; text-decoration:underline">Datenschutz ↑</a>
+  </div>
+</footer>
+
+<script>
+  // ─── HAMBURGER MENU ───
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+  
+  // Close mobile menu when a link is clicked
+  document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    });
+  });
+
+  // ─── NAV SCROLL ───
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // ─── REVEAL ON SCROLL ───
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  reveals.forEach(r => observer.observe(r));
+</script>
 
 </body>
 </html>

@@ -4,45 +4,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Jason!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">I'm Jason</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="kontakt.html">Kontakt & Social Media</a></li>
-                <li><a href="meine-programme.html">Meine Projekte</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo"><span>//</span> I'm Jason</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#aboutme">About Me</a></li>
+    <li><a href="#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
 
-    <main>
-        <section>
-            <h1>Hello, Visitor!</h1>
-        </section>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#aboutme">About Me</a></li>
+    <li><a href="#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+</div>
 
-        <section>
-            <h2>Über mich</h2>
-            <p>Hallo, mein Name ist Jason.</p>
-            <br>
-            <p>Hallo, mein Name ist Jason.
-Ich bin derzeit noch Schüler, aber mein großer Traum ist es, später als Anwendungsentwickler oder Cyber Security Experte zu arbeiten. Ich interessiere mich sehr für die Welt der Technologie und Computer, und ich freue mich darauf, meine Fähigkeiten in diesem Bereich weiterzuentwickeln.
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">developer // 2026</div>
+    <h1 class="hero-title">
+      Hello,<br>
+      <span class="accent">Visitor!</span>
+    </h1>
+    <p class="hero-subtitle">
+      Ich bin Jason — Entwickler, Tech-Enthusiast und leidenschaftlicher Problem-Löser.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">🚀</div>
+        <div class="stat-label">Webentwicklung mit HTML, CSS, JavaScript</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">🔐</div>
+        <div class="stat-label">Ethical Hacking & Cyber Security</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">💡</div>
+        <div class="stat-label">Innovative Tech-Lösungen</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll</div>
+</section>
 
-In meiner Freizeit programmiere ich gerne, vor allem im Bereich Webentwicklung mit HTML, CSS und JavaScript. Es macht mir Spaß, eigene Webseiten zu gestalten und dabei immer wieder neue Dinge zu lernen und auszuprobieren.
+<!-- ABOUT ME -->
+<section id="aboutme">
+  <div class="container">
+    <div class="section-label reveal">wer bin ich</div>
+    <h2 class="reveal">Über <span class="green">mich</span></h2>
 
-Neben dem Coden zocke ich gerne, am liebsten Simulationsspiele, weil sie mir die Möglichkeit geben, komplexe Systeme zu verstehen und kreativ zu steuern. Ein weiteres Hobby von mir ist Ethical Hacking, um die Logik hinter IT-Sicherheitssystemen zu verstehen, Sicherheitslücken zu finden und sie zu beheben. Es ist eine spannende Herausforderung, die mich manchmal auch zum struggeln bringt, aber trotzdem Spaß macht.
+    <div class="security-split reveal">
+      <div class="security-text">
+        <p>
+          Hallo, mein Name ist Jason. Ich bin derzeit noch Schüler, aber mein großer Traum ist es, später als Anwendungsentwickler oder Cyber Security Experte zu arbeiten.
+        </p>
+        <p>
+          <strong>Ich interessiere mich sehr für die Welt der Technologie und Computer</strong>, und ich freue mich darauf, meine Fähigkeiten in diesem Bereich weiterzuentwickeln.
+        </p>
+        <p>
+          In meiner Freizeit programmiere ich gerne, vor allem im Bereich <strong>Webentwicklung mit HTML, CSS und JavaScript</strong>. Es macht mir Spaß, eigene Webseiten zu gestalten und dabei immer wieder neue Dinge zu lernen und auszuprobieren.
+        </p>
+        <p>
+          Neben dem Coden zocke ich gerne, am liebsten Simulationsspiele, weil sie mir die Möglichkeit geben, komplexe Systeme zu verstehen und kreativ zu steuern. <strong>Ein weiteres Hobby von mir ist Ethical Hacking</strong>, um die Logik hinter Cyber Security zu durchschauen.
+        </p>
+      </div>
 
-Mit dieser Webseite möchte ich Projekte teilen, und über mich erzählen.</p>
-        </section>
-    </main>
+      <div>
+        <div class="terminal-block">
+          <div class="line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+          <div class="line"><span class="out">Jason Fischer</span></div>
+          <div class="line"><span class="prompt">$</span> <span class="cmd">skills --list</span></div>
+          <div class="line"><span class="out">Web Development (HTML, CSS, JavaScript)</span></div>
+          <div class="line"><span class="out">Ethical Hacking & Security</span></div>
+          <div class="line"><span class="out">Creative Problem Solving</span></div>
+          <div class="line"><span class="comment"># Passionate about tech & learning new things</span></div>
+          <div class="line"><span class="prompt">$</span> <span class="cmd">echo "Let's build something amazing!"</span></div>
+          <div class="line"><span class="out"><strong style="color:var(--green)">✓ Ready!</strong></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Jason Fischer | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutzerklärung</a></p>
-    </footer>
+<!-- QUOTE -->
+<div class="quote-section">
+  <div class="big-quote reveal">
+    <blockquote>
+      The capacity to learn is a gift; the ability to learn is a skill; the willingness to learn is a choice.
+    </blockquote>
+    <cite>Brian Herbert</cite>
+  </div>
+</div>
+
+<!-- PROJEKTE -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label reveal">was ich gemacht habe</div>
+    <h2 class="reveal">Meine <span class="green">Projekte</span></h2>
+
+    <div class="who-grid reveal">
+      <div class="who-card">
+        <span class="who-icon">🌐</span>
+        <div class="who-title">Webseiten</div>
+        <div class="who-desc">Ich erstelle <strong>responsive und moderne Webseiten</strong> mit HTML, CSS und JavaScript. Jedes Projekt ist eine Gelegenheit, neue Technologien zu lernen.</div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">🔒</span>
+        <div class="who-title">Security-Projekte</div>
+        <div class="who-desc">Ich erkunde die Welt des <strong>Ethical Hacking</strong> und arbeite an Security-orientierten Projekten, um potenzielle Sicherheitslücken zu verstehen.</div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">🛠️</span>
+        <div class="who-title">Tools & Scripts</div>
+        <div class="who-desc">Ich entwickle <strong>praktische Tools und Skripte</strong>, die Probleme lösen und den Arbeitsfluss erleichtern.</div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">📚</span>
+        <div class="who-title">Lernprojekte</div>
+        <div class="who-desc">Ständiges Lernen ist meine Passion. Ich experimentiere mit neuen Technologien und <strong>teile mein Wissen auf GitHub</strong>.</div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">🎮</span>
+        <div class="who-title">Gaming & Simulationen</div>
+        <div class="who-desc">Ich liebe Simulationsspiele, die mir helfen, <strong>komplexe Systeme zu verstehen</strong> und kreativ zu denken.</div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">🚀</span>
+        <div class="who-title">Tech Innovations</div>
+        <div class="who-desc">Ich arbeite an <strong>innovativen Lösungen</strong>, die moderne Probleme mit kreativen technologischen Ansätzen adressieren.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALTERNATIVES -->
+<section class="alt-section">
+  <div class="container">
+    <div class="section-label reveal">meine fähigkeiten</div>
+    <h2 class="reveal"><span class="green">Technical</span> Skills</h2>
+
+    <div class="alt-grid reveal">
+      <div class="alt-card">
+        <div class="alt-num">01</div>
+        <div class="alt-title">Frontend Development</div>
+        <div class="alt-desc">
+          Expertise in HTML5, CSS3 und JavaScript. Ich entwickle responsive, moderne und benutzerfreundliche Interfaces mit modernsten Web-Standards.
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-num">02</div>
+        <div class="alt-title">Security & Hacking</div>
+        <div class="alt-desc">
+          Leidenschaft für Ethical Hacking und Cybersecurity. Ich verstehe Sicherheitslücken und arbeite daran, sichere Systeme zu entwickeln.
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-num">03</div>
+        <div class="alt-title">Problem Solving</div>
+        <div class="alt-desc">
+          Ich liebe es, komplexe Probleme zu analysieren und kreative, effiziente Lösungen zu entwickeln. Logisches Denken ist meine Stärke.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="section-label reveal">was du tun kannst</div>
+    <h2 class="reveal">Let's Connect.<br><span class="green">Erreiche mich.</span></h2>
+    <p class="cta-sub reveal">
+      Du interessierst dich für meine Projekte oder möchtest zusammenarbeiten? Schreib mir eine Nachricht oder folge mir auf Social Media!
+    </p>
+
+    <div class="cta-buttons reveal">
+      <a href="kontakt.html" class="btn btn-primary">
+        Kontakt
+      </a>
+      <a href="https://github.com/CodeCrafterOG" target="_blank" class="btn btn-petition">
+        GitHub
+      </a>
+      <a href="https://instagram.com" target="_blank" class="btn btn-secondary">
+        Instagram
+      </a>
+      <a href="https://twitter.com" target="_blank" class="btn btn-secondary">
+        Twitter
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>&copy; 2026 Jason Fischer | I'm Jason</div>
+  <div style="color: #555; font-size:0.7rem">
+    <a href="impressum.html" style="color:#666; text-decoration:underline">Impressum</a> | <a href="datenschutz.html" style="color:#666; text-decoration:underline">Datenschutz ↑</a>
+  </div>
+</footer>
+
+<script>
+  // ─── HAMBURGER MENU ───
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+  
+  // Close mobile menu when a link is clicked
+  document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    });
+  });
+
+  // ─── NAV SCROLL ───
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // ─── REVEAL ON SCROLL ───
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  reveals.forEach(r => observer.observe(r));
+
+  // ─── STAGGERED CARD REVEAL ───
+  document.querySelectorAll('.who-grid .who-card, .alt-grid .alt-card').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 0.07}s`;
+  });
+</script>
 
 </body>
 </html>

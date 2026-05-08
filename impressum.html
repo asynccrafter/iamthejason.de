@@ -4,46 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html">I'm Jason</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="kontakt.html">Kontakt & Social Media</a></li>
-                <li><a href="meine-programme.html">Meine Projekte</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h1>Impressum</h1>
-        </section>
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo"><span>//</span> I'm Jason</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#aboutme">About Me</a></li>
+    <li><a href="index.html#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
 
-        <section>
-            <h2>Anbieter (§ 5 DDG) und inhaltlich Verantwortlich (§ 18 Abs. 2 MStV)</h2>
-            <h3>Verantwortlicher für den Inhalt</h3><br>
-            <p>
-                Jason Andre Fischer<br>
-                Rudolf-Breitscheidstraße 11<br>
-                38820 Halberstadt<br>
-                Deutschland
-            </p>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#aboutme">About Me</a></li>
+    <li><a href="index.html#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+</div>
 
-            <h2>Kontaktinformationen</h2>
-            <p>
-                E-Mail: <a href="mailto:kontakt@iamthejason.de">kontakt@iamthejason.de</a>
-            </p>
-        </section>
-    </main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">legal information // 2026</div>
+    <h1 class="hero-title">
+      Impressum &<br>
+      <span class="accent">Anbieterkennzeichnung</span>
+    </h1>
+    <p class="hero-subtitle">
+      Alle notwendigen Informationen gemäß deutschem Recht.
+    </p>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Jason Fischer | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutzerklärung</a></p>
-    </footer>
+<!-- CONTENT -->
+<section>
+  <div class="container reveal">
+    <div class="section-label">rechtliche informationen</div>
+    <h2>Impressum nach <span class="green">deutschem Recht</span></h2>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">Anbieter (§ 5 DDG) und inhaltlich Verantwortlich (§ 18 Abs. 2 MStV)</h2>
+      <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--green);">Verantwortlicher für den Inhalt</h3>
+      <p>
+        Jason Andre Fischer<br>
+        Rudolf-Breitscheidstraße 11<br>
+        38820 Halberstadt<br>
+        Deutschland
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">Kontaktinformationen</h2>
+      <p>
+        E-Mail: <a href="mailto:kontakt@iamthejason.de" style="color: var(--green);">kontakt@iamthejason.de</a>
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">Hosting-Anbieter</h2>
+      <p>
+        <strong>Hosting-Anbieter: netcup GmbH</strong><br>
+        Daimlerstr. 25<br>
+        76185 Karlsruhe<br>
+        Deutschland<br><br>
+        Website: <a href="https://www.netcup.de" target="_blank" style="color: var(--green);">https://www.netcup.de</a>
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">Haftungsausschluss</h2>
+      <p>
+        Trotz sorgfältiger Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">Urheberrecht</h2>
+      <p>
+        Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des Autors oder Urhebers.
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+      <p style="font-size: 0.9rem; color: var(--muted); margin-top: 1rem;">
+        Zuletzt aktualisiert: Mai 2026
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>&copy; 2026 Jason Fischer | I'm Jason</div>
+  <div style="color: #555; font-size:0.7rem">
+    <a href="impressum.html" style="color:#666; text-decoration:underline">Impressum</a> | <a href="datenschutz.html" style="color:#666; text-decoration:underline">Datenschutz ↑</a>
+  </div>
+</footer>
+
+<script>
+  // ─── HAMBURGER MENU ───
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+  
+  // Close mobile menu when a link is clicked
+  document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    });
+  });
+
+  // ─── NAV SCROLL ───
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // ─── REVEAL ON SCROLL ───
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  reveals.forEach(r => observer.observe(r));
+</script>
 
 </body>
 </html>

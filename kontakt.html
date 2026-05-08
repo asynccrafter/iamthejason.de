@@ -4,39 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt & Social Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html">I'm Jason :)</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="kontakt.html">Kontakt & Social Media</a></li>
-                <li><a href="meine-programme.html">Meine Projekte</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h1>Kontakt & Social Media</h1>
-            <p>Hier findest du alle Links zu meinem Social Media</p>
-        </section>
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo"><span>//</span> I'm Jason</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#aboutme">About Me</a></li>
+    <li><a href="index.html#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
 
-        <section>
-            <p>Du kannst mich über Instagram oder per E-Mail erreichen.</p>
-        </section>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#aboutme">About Me</a></li>
+    <li><a href="index.html#projects">Projekte</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+</div>
 
-        <section>
-            <h2>Folge mir auf meinen Kanälen</h2>
-        </section>
-    </main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">get in touch // 2026</div>
+    <h1 class="hero-title">
+      Kontakt &<br>
+      <span class="accent">Social Media</span>
+    </h1>
+    <p class="hero-subtitle">
+      Ich freue mich, von dir zu hören! Erreiche mich über die folgenden Kanäle.
+    </p>
+  </div>
+</section>
 
-    <footer id="main-footer">
-        <p>&copy; 2026 Jason Fischer | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutzerklärung</a></p>
-    </footer>
+<!-- KONTAKT -->
+<section>
+  <div class="container">
+    <div class="section-label reveal">so erreichst du mich</div>
+    <h2 class="reveal">Let's <span class="green">Connect</span></h2>
+
+    <div class="who-grid reveal">
+      <div class="who-card">
+        <span class="who-icon">📧</span>
+        <div class="who-title">E-Mail</div>
+        <div class="who-desc"><strong><a href="mailto:kontakt@iamthejason.de" style="color: var(--green); text-decoration: none;">kontakt@iamthejason.de</a></strong><br><br>Du kannst mich direkt per E-Mail erreichen. Ich antworte so schnell wie möglich!</div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">🐱</span>
+        <div class="who-title">GitHub</div>
+        <div class="who-desc">Sieh dir meine Projekte und meinen Code auf GitHub an. <strong><a href="https://github.com/CodeCrafterOG" target="_blank" style="color: var(--green); text-decoration: none;">CodeCrafterOG</a></strong></div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">📱</span>
+        <div class="who-title">Instagram</div>
+        <div class="who-desc">Folge mir auf Instagram für Updates und Einblicke in meine Projekte. <strong><a href="https://instagram.com" target="_blank" style="color: var(--green); text-decoration: none;">Instagram</a></strong></div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">🐦</span>
+        <div class="who-title">Twitter / X</div>
+        <div class="who-desc">Teile Gedanken zu Tech und Security auf Twitter. <strong><a href="https://twitter.com" target="_blank" style="color: var(--green); text-decoration: none;">Twitter</a></strong></div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">💼</span>
+        <div class="who-title">LinkedIn</div>
+        <div class="who-desc">Vernetz dich mit mir auf LinkedIn. <strong><a href="https://linkedin.com" target="_blank" style="color: var(--green); text-decoration: none;">LinkedIn</a></strong></div>
+      </div>
+
+      <div class="who-card">
+        <span class="who-icon">💬</span>
+        <div class="who-title">Discord</div>
+        <div class="who-desc">Trete meinem Discord-Server bei und chatte mit mir und anderen Tech-Enthusiasten!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>&copy; 2026 Jason Fischer | I'm Jason</div>
+  <div style="color: #555; font-size:0.7rem">
+    <a href="impressum.html" style="color:#666; text-decoration:underline">Impressum</a> | <a href="datenschutz.html" style="color:#666; text-decoration:underline">Datenschutz ↑</a>
+  </div>
+</footer>
+
+<script>
+  // ─── HAMBURGER MENU ───
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+  
+  // Close mobile menu when a link is clicked
+  document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    });
+  });
+
+  // ─── NAV SCROLL ───
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // ─── REVEAL ON SCROLL ───
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  reveals.forEach(r => observer.observe(r));
+
+  // ─── STAGGERED CARD REVEAL ───
+  document.querySelectorAll('.who-grid .who-card').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 0.07}s`;
+  });
+</script>
 
 </body>
 </html>
