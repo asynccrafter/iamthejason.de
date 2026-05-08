@@ -103,6 +103,7 @@ body::after {
     letter-spacing: 0.3em;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     opacity: 0;
     animation: fadeUp 0.6s 0.2s ease forwards;
 }
@@ -173,29 +174,6 @@ body::after {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-top: 0.3rem;
-}
-
-.scroll-hint {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.3em;
-    color: var(--muted);
-    text-transform: uppercase;
-    animation: bounce 2s infinite;
-}
-
-.scroll-hint::after {
-    content: '';
-    width: 1px;
-    height: 40px;
-    background: linear-gradient(to bottom, var(--green), transparent);
 }
 
 /* ─── SECTION BASE ─── */
@@ -1206,4 +1184,169 @@ nav.scrolled {
 
 .source-link:hover {
     text-decoration: underline;
+}
+
+/* ─── LOGIN FORM ─── */
+.login-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+.login-container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 3rem;
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    padding: 0.75rem;
+    background: rgba(0, 255, 65, 0.03);
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: var(--green);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+}
+
+.form-group.checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--green);
+}
+
+.form-group.checkbox label {
+    margin-bottom: 0;
+    text-transform: none;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--green);
+    color: var(--black);
+    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    background: #00dd39;
+    transform: translateY(-2px);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+.login-footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.login-footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.link-green {
+    color: var(--green);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.link-green:hover {
+    color: #00dd39;
+    text-decoration: underline;
+}
+
+.login-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.info-card:hover {
+    border-color: var(--green);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.info-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .login-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .login-container {
+        padding: 2rem;
+    }
 }
