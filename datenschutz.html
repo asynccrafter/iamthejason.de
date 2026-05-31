@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutzerklärung</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <div class="cookie-content">
+    <div class="cookie-text">
+      <strong>🍪 Cookies & externe Ressourcen:</strong> Diese Website verwendet Google Fonts. Um diese zu laden und Ihr Nutzungserlebnis zu verbessern, benötigen wir Ihre Zustimmung. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn" id="cookie-reject">Ablehnen</button>
+      <button class="cookie-btn" id="cookie-accept">Akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<script src="cookies.js"></script>
 
 <!-- NAV -->
 <nav id="nav">
@@ -113,14 +125,44 @@
     </div>
 
     <div style="margin-top: 3rem;">
-      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">5. Cookies</h2>
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">5. Cookies und Consent-Verwaltung</h2>
       <p>
-        Meine Website verwendet keine Cookies, die einer ausdrücklichen Einwilligung bedürfen. Es können ausschließlich technisch notwendige Cookies (sog. Session-Cookies) zum Einsatz kommen, die für die grundlegende Funktionalität der Website erforderlich sind. Diese werden nach Ende deines Besuchs bzw. nach dem Schließen des Browsers automatisch gelöscht.
+        <strong>Opt-In Cookie für externe Ressourcen:</strong><br><br>
+        Diese Website verwendet ein Consent-Banner für die Verwaltung von Cookies und externen Ressourcen (Google Fonts). Das Cookie "google-fonts-consent" wird nur dann gesetzt, wenn du aktiv "Akzeptieren" oder "Ablehnen" klickst.
+      </p>
+      <ul style="margin: 1.5rem 0; margin-left: 2rem;">
+        <li><strong>Cookie-Name:</strong> google-fonts-consent</li>
+        <li><strong>Gültigkeitsdauer:</strong> 365 Tage</li>
+        <li><strong>Werte:</strong> "accepted" oder "rejected"</li>
+        <li><strong>Zweck:</strong> Speicherung deiner Consent-Entscheidung für externe Ressourcen</li>
+        <li><strong>SameSite-Attribut:</strong> Lax (erhöhte Sicherheit)</li>
+      </ul>
+      <p style="margin-top: 1.5rem;">
+        <strong>Ablehnungsmöglichkeit ist DSGVO-konform:</strong> Wenn du "Ablehnen" wählst, werden Google Fonts <strong>nicht</strong> geladen. Die Website bleibt vollständig funktionsfähig mit System-Schriftarten. Damit entspricht die Website der DSGVO-Anforderung, dass externe Ressourcen ohne Einwilligung nicht geladen werden dürfen.
+      </p>
+      <p style="margin-top: 1.5rem;">
+        <strong>Technisch notwendige Cookies:</strong> Es können ausschließlich technisch notwendige Cookies (sog. Session-Cookies) zum Einsatz kommen, die für die grundlegende Funktionalität der Website erforderlich sind. Diese werden nach Ende deines Besuchs automatisch gelöscht.
       </p>
     </div>
 
     <div style="margin-top: 3rem;">
-      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">6. Externe Links und Social Media</h2>
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">6. Google Fonts (externe Ressource)</h2>
+      <p>
+        <strong>Einbindung nur mit Zustimmung:</strong> Diese Website verwendet Google Fonts von Google Ireland Limited (Google), 70 Rue Boileau, 75016 Paris, Frankreich, zur Verbesserung der Typografie.
+      </p>
+      <ul style="margin: 1.5rem 0; margin-left: 2rem;">
+        <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</li>
+        <li><strong>Datenverarbeiter:</strong> Google Ireland Limited</li>
+        <li><strong>Beladung:</strong> Google Fonts werden nur geladen, wenn du im Cookie-Banner "Akzeptieren" klickst</li>
+        <li><strong>Keine Ladung ohne Zustimmung:</strong> Falls du "Ablehnen" wählst oder nicht reagierst, werden Google Fonts nicht geladen</li>
+        <li><strong>Speichern:</strong> Deine Zustimmung wird ein Jahr lang gespeichert</li>
+      </ul>
+      <p style="margin-top: 1.5rem;">
+        <strong>Datenübertragung:</strong> Wenn Google Fonts geladen werden, verbindet sich dein Browser mit den Google-Servern. Dabei kann Google deine IP-Adresse und Informationen über deine Geräte erfahren. Google verarbeitet diese Daten nach eigener Datenschutzerklärung. (siehe <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--green);">https://policies.google.com/privacy</a>).
+      </p>
+    </div>
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">7. Externe Links und Social Media</h2>
       <p>
         Auf meiner Website findest du Links zu meinen Profilen auf sozialen Netzwerken und anderen Diensten. Diese Links sind einfache Verlinkungen und keine sogenannten Social-Plugins. Solange du diese Links nicht aktivierst, werden keine Daten an die jeweiligen Plattformen übertragen.
       </p>
@@ -130,15 +172,31 @@
     </div>
 
     <div style="margin-top: 3rem;">
-      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">7. Betroffenenrechte (DSGVO)</h2>
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">8. Betroffenenrechte (DSGVO)</h2>
       <p>
         Du hast folgende Rechte bezüglich deiner personenbezogenen Daten:
       </p>
       <ul style="margin: 1.5rem 0; margin-left: 2rem;">
-        <li><strong>Recht auf Auskunft (Art. 15 DSGVO):</strong> Du kannst Auskunft darüber verlangen, welche deiner personenbezogenen Daten ich speichere.</li>
-        <li><strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Du kannst die Berichtigung fehlerhafter Daten verlangen.</li>
-        <li><strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Du kannst die Löschung deiner Daten verlangen, soweit nicht gesetzliche Aufbewahrungspflichten entgegenstehen.</li>
+        <li><strong>Recht auf Auskunft (Art. 15 DSGVO):</strong> Du kannst Auskunft darüber verlangen, welche deiner personenbezogenen Daten ich speichere, wie lange sie gespeichert werden und zu welchen Zwecken.</li>
+        <li><strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Du kannst die Berichtigung fehlerhafter oder unvollständiger Daten verlangen.</li>
+        <li><strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Du kannst die Löschung deiner Daten verlangen ("Recht auf Vergessenwerden"), soweit nicht gesetzliche Aufbewahrungspflichten entgegenstehen.</li>
+        <li><strong>Recht auf Einschränkung (Art. 18 DSGVO):</strong> Du kannst verlangen, dass die Verarbeitung deiner Daten eingeschränkt wird.</li>
+        <li><strong>Recht auf Datenportabilität (Art. 20 DSGVO):</strong> Du kannst deine Daten in einem strukturierten, gängigen und maschinenlesbaren Format erhalten und diese an einen anderen Verantwortlichen übermitteln lassen.</li>
+        <li><strong>Widerspruchsrecht (Art. 21 DSGVO):</strong> Du kannst der Verarbeitung deiner Daten widersprechen, insbesondere wenn diese zu Werbezwecken erfolgt.</li>
       </ul>
+      <p style="margin-top: 1.5rem;">
+        Zur Geltendmachung dieser Rechte wende dich bitte per E-Mail an: <a href="mailto:kontakt@iamthejason.de" style="color: var(--green);">kontakt@iamthejason.de</a>
+      </p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--white);">9. Änderungen dieser Datenschutzerklärung</h2>
+      <p>
+        Ich behalte mir vor, diese Datenschutzerklärung jederzeit ohne vorherige Ankündigung anzupassen, soweit dies erforderlich ist, um sie aktuell zu halten oder gesetzlichen Anforderungen zu entsprechen. Die aktuelle Version ist immer auf dieser Seite verfügbar.
+      </p>
+      <p style="margin-top: 1.5rem;">
+        <strong>Letzte Aktualisierung:</strong> 31. Mai 2026
+      </p>
     </div>
   </div>
 </section>
