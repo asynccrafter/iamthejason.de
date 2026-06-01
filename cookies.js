@@ -1,5 +1,5 @@
 // Cookie-Banner für Google Fonts Consent
-(function() {
+(function () {
   const COOKIE_NAME = 'google-fonts-consent';
   const COOKIE_EXPIRY_DAYS = 365;
 
@@ -75,9 +75,9 @@
   }
 
   // Beim Laden prüfen
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const consent = getCookie(COOKIE_NAME);
-    
+
     if (consent === 'accepted') {
       // User hat bereits akzeptiert - Fonts laden
       loadGoogleFonts();
@@ -92,7 +92,7 @@
   });
 
   // Button-Event-Listener
-  window.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('DOMContentLoaded', function () {
     const acceptBtn = document.getElementById('cookie-accept');
     const rejectBtn = document.getElementById('cookie-reject');
 
