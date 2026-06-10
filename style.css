@@ -361,7 +361,7 @@ h2 .gold {
 }
 
 .terminal-block::before {
-    content: '● ● ●';
+    content: '111';
     position: absolute;
     top: 0.75rem;
     left: 1rem;
