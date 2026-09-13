@@ -1,0 +1,31 @@
+Options -MultiViews
+RewriteEngine On
+
+# 1a) HTTP + www  →  HTTPS + non-www
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+# 1b) HTTPS + www  →  HTTPS + non-www
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+# 1c) HTTP (ohne www)  →  HTTPS (ohne www)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# /index.html, /index.php, /index  →  / (mit 301)
+RewriteCond %{THE_REQUEST} \s/+index(\.(html?|php))?\s [NC]
+RewriteRule ^index(\.(html?|php))?$ / [R=301,L]
+
+# Direkten Zugriff auf Dateien MIT Endung unterbinden (optional –
+# verhindert doppelte Inhalte; entfernen falls nicht gewünscht)
+RewriteCond %{THE_REQUEST} \s.+\.(html?|php)\s [NC]
+RewriteRule ^(.+)\.(html?|php)$ /$1 [R=301,L]
+
+# Interne Auflösung: /seite  →  /seite.html  (Reihenfolge anpassen)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
